@@ -1,10 +1,12 @@
 // import "./App.css";
 import Card from "./components/Card.tsx";
 import GridCard from "./components/GridCard.tsx";
+import NavBar from "./components/NavBar.tsx";
 
 function App() {
   return (
     <section className="bg-[#fff]">
+      <NavBar />
       <div
         className="flex flex-col bg-[#fff] text-[#1d1d1f] w-screen gap-[12px] border-b-[12px] border-[#fff]"
         id="section-collection"
