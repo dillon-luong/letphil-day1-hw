@@ -15,7 +15,7 @@
   -moz-osx-font-smoothing: grayscale;
 
   /* vars */
-  --grid-width: calc(100% - 24px)
+  --grid-width: calc(100% - 36px)
 }
 
 a {
