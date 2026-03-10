@@ -36,6 +36,19 @@ function GridCard({
     }
   }
 
+  function GetPurchaseButton() {
+    if (purchaseString) {
+      return (
+        <button
+          className="!py-[8px] !m-0 !mt-[17px] !px-[15px] !text-[14px]/[1.42859] !font-[400] !-tracking-[.016em] !ml-[10px] bg-transparent text-[#0066cc] border-[#0066cc] border-solid border
+            hover:bg-[#0071e3] hover:text-white"
+        >
+          {purchaseString}
+        </button>
+      );
+    }
+  }
+
   return (
     <>
       <div className="relative h-[580px] bg-[#fff] border-[#fff] pt-0 relative border-l-0 border-r-0 overflow-hidden">
@@ -48,12 +61,7 @@ function GridCard({
             <button className="!py-[8px] !m-0 !mt-[17px] !px-[15px] !text-[14px]/[1.42859] !font-[400] !-tracking-[.016em] bg-[#0071e3] relative text-white border-[1px] w-auto border border-none border-1">
               {learnString ? learnString : "Learn more"}
             </button>
-            <button
-              className="!py-[8px] !m-0 !mt-[17px] !px-[15px] !text-[14px]/[1.42859] !font-[400] !-tracking-[.016em] !ml-[10px] bg-transparent text-[#0066cc] border-[#0066cc] border-solid border
-            hover:bg-[#0071e3] hover:text-white"
-            >
-              {purchaseString}
-            </button>
+            <GetPurchaseButton />
           </div>
         </div>
 
